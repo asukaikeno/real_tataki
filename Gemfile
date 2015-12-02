@@ -47,6 +47,12 @@ group :development, :test do
 
   #パスワード（has_secure_password）
   gem 'bcrypt','3.1.7'
+
+  #heroku用gemgem
+  group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+  end
   
 end
 
